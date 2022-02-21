@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  padding:49px 94px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,142 @@
+.list-parent {
+}
+.header {
+  margin-bottom: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inputs {
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  display: flex;
+  position: relative;
+}
+
+input {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  border: none;
+}
+input::after {
+  content: "abc";
+}
+.place::placeholder {
+  color: #333333;
+}
+.guests::placeholder {
+  color: #bdbdbd;
+}
+.logo-container {
+  max-width: 100px;
+}
+
+.stays {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.stays__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+.stays__number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4f4f4f;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px 32px;
+  flex-wrap: wrap;
+}
+h4 {
+  text-align: center;
+  background: #ee6c6c;
+  margin: 20px auto;
+  padding: 40px;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.drawer {
+  font-family: "Mulish", sans-serif;
+  position: absolute;
+  top: 120%;
+  left: 2%;
+  color: #ee6c6c;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* Modal */
+.drawer:hover {
+  text-decoration: underline;
+}
+/* .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+} */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(79, 79, 79, 0.4);
+  z-index: 5;
+}
+.modal {
+  position: absolute;
+  /* top: 20%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap:20px;
+  padding:0 50px;
+
+}
+.modal>*{
+  flex:2;
+}
+.modal>*:last-child{
+flex:1;
+}
+.modal .inputs__child{
+  padding:0;
+}
+.modal > * input {
+  padding: 20px;
+  padding-right: 30px;
+  width: 100%;
+}
+.modal > * input:focus {
+  overflow: hidden;
+  border: 1px solid #000;
+  border-radius: 16px;
+}
